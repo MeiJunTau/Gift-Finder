@@ -1,0 +1,8 @@
+[
+    {"name": "Dad", "price": "£50", "interests": ["Chinese TV", "Mah Jong"], "reason": "birthday"},
+    {"name": "Mum", "price": "£50", "interests": ["Cooking", "Gardening", "Cat", "Karaoke"], "reason": "birthday"},
+    {"name": "Husband", "price": "£50", "interests": ["Photography", "Music", "Puzzles", "Tech", "Maths"], "reason": "birthday"},
+    {"name": "Son", "price": "£50", "interests": ["Clothes", "Music", "Games", "History"], "reason": "birthday"},
+    {"name": "Sister", "price": "£50", "interests": ["Politics", "Music", "Hats", "Social Justice"], "reason": "birthday"},
+    {"name": "Brother", "price": "£50", "interests": ["Art", "Cat", "Clothes"], "reason": "birthday"}
+]
