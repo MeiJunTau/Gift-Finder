@@ -50,8 +50,11 @@ def run_holiday_gift_scout():
                 f"Find 3 gift ideas for {person['name']}. "
                 f"Interests: {person['interests']}. "
                 "Focus on reasonably priced items aournd £50 available for the 2026 season from UK retailers."
+                "For EACH item, you MUST include the direct retailer URL. "
+                "If a specific URL is not available, find an alternative item where a URL exists. "
+                "Do not list a gift if you cannot find a valid purchase link."
             ),
-            expected_output="A raw list of 3 gifts with prices and availability.",
+            expected_output="A structured list including: Item Name, Price, Availability, Retailer Name, and the Direct URL.",
             agent=scout
         )
         
@@ -60,6 +63,9 @@ def run_holiday_gift_scout():
             description=(
                 f"Take the gift ideas found for {person['name']} and format them into a 'Personalized Holiday Gift Guide'. "
                 "Use Markdown headers, bullet points, and add a 'Concierge Note' for each item explaining why it fits their specific personality."
+                "In addition create a Markdown table with the following columns: | Gift Name | Price | Concierge Note | Purchase Link |. "
+                "For the 'Purchase Link' column, format the URL as a clickable Markdown link: [Buy at Retailer](URL). "
+                "Ensure all URLs are clean and functional."
             ),
             expected_output="A luxury-formatted Markdown report ready for a high-end client.",
             agent=concierge,
